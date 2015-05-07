@@ -1,11 +1,19 @@
 <article>
-<header>
-<h1>$title$</h1>
-<p>por <em>$author$</em> - <strong>$date$</strong></p>
-<p>Tags: $prettytags$.</p>
-</header>
+    <header>
+        <h1>$title$</h1>
+    </header>
 
-<section>
-$body$
-</section>
+    <section>
+        $body$
+        <div class="meta">
+            <div class="meta-component">
+                <i class="fa fa-calendar fa-fw"></i>
+                $date$
+            </div>
+            <div class="meta-component">
+                <i class="fa fa-tags fa-fw"></i>
+                $prettytags$
+            </div>
+        </div>
+    </section>
 </article>

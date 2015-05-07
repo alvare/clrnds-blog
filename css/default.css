@@ -1,8 +1,7 @@
 body {
     background: #f6f6f6;
     color: #333;
-    max-width: 45em;
-    min-width: 20em;
+    max-width: 780px;
     margin: auto;
     padding: 1em;
     font-family: "Vollkorn", Times;
@@ -46,7 +45,7 @@ code, pre {
 }
 
 body>header {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #adadad;
 }
 
 body>header h1 {
@@ -111,8 +110,7 @@ article h2 {
 
 body>footer {
     text-align: center;
-    border-top: 1px dashed black;
-    margin-top: 10px;
+    border-top: 1px solid #adadad;
 }
 
 .figure .caption {
@@ -126,4 +124,39 @@ ins {
 ins::before {
     font-weight: bold;
     content: ">> ";
+}
+
+article .meta {
+
+    text-align: center;
+
+}
+article .meta {
+    text-align: center;
+    top: 85px;
+    line-height: 2;
+    font-size: 0.8em;
+    color: #999;
+    padding: 10px 0px;
+    border-top: 1px dashed #adadad;
+    clear: both;
+    position: static;
+    width: auto;
+}
+
+article .meta .meta-component {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+}
+
+footer #social a {
+    font-size: 18px;
+    color: #999;
+    transition: color 0.3s ease 0s;
+    padding: 20px;
+}
+
+footer #social a:hover {
+    color: #2484C1;
 }
