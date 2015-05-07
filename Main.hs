@@ -3,7 +3,7 @@ module Main where
 
 import Data.Functor ((<$>))
 import Data.List (isPrefixOf)
-import Data.Monoid (mappend)
+import Data.Monoid ((<>))
 import Data.Text (pack, unpack, replace, empty)
 
 import Hakyll
@@ -15,17 +15,21 @@ main = hakyll $ do
 
     -- Compress CSS
     match "css/*" $ do
-        route   idRoute
+        route idRoute
         compile compressCssCompiler
+
+    match "js/*" $ do
+        route idRoute
+        compile copyFileCompiler
 
     -- Copy Files
     match "files/**" $ do
-        route   idRoute
+        route idRoute
         compile copyFileCompiler
 
     -- Render posts
     match "posts/*" $ do
-        route   $ setExtension ".html"
+        route $ setExtension ".html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html" (tagsCtx tags)
             >>= (externalizeUrls $ feedRoot feedConfiguration)
@@ -68,11 +72,11 @@ main = hakyll $ do
             list <- postList tags pattern recentFirst
             makeItem ""
                 >>= loadAndApplyTemplate "templates/posts.html"
-                        (constField "title" title `mappend`
-                            constField "body" list `mappend`
+                        (constField "title" title <>
+                            constField "body" list <>
                             defaultContext)
                 >>= loadAndApplyTemplate "templates/base.html"
-                        (constField "title" title `mappend`
+                        (constField "title" title <>
                             defaultContext)
                 >>= relativizeUrls
 
@@ -97,29 +101,29 @@ main = hakyll $ do
 
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
+    dateField "date" "%B %e, %Y" <>
     defaultContext
 
 allPostsCtx :: Context String
 allPostsCtx =
-    constField "title" "All posts" `mappend`
+    constField "title" "All posts" <>
     postCtx
 
 homeCtx :: Tags -> String -> Context String
 homeCtx tags list =
-    constField "posts" list `mappend`
-    constField "title" "Index" `mappend`
-    field "taglist" (\_ -> renderTagList tags) `mappend`
+    constField "posts" list <>
+    constField "title" "Index" <>
+    field "taglist" (\_ -> renderTagList tags) <>
     defaultContext
 
 feedCtx :: Context String
 feedCtx =
-    bodyField "description" `mappend`
+    bodyField "description" <>
     postCtx
 
 tagsCtx :: Tags -> Context String
 tagsCtx tags =
-    tagsField "prettytags" tags `mappend`
+    tagsField "prettytags" tags <>
     postCtx
 
 feedConfiguration :: FeedConfiguration
@@ -134,9 +138,7 @@ feedConfiguration = FeedConfiguration
 externalizeUrls :: String -> Item String -> Compiler (Item String)
 externalizeUrls root item = return $ fmap (externalizeUrlsWith root) item
 
-externalizeUrlsWith :: String -- ^ Path to the site root
-                    -> String -- ^ HTML to externalize
-                    -> String -- ^ Resulting HTML
+externalizeUrlsWith :: String -> String -> String
 externalizeUrlsWith root = withUrls ext
   where
     ext x = if isExternal x then x else root ++ x
@@ -145,9 +147,7 @@ externalizeUrlsWith root = withUrls ext
 unExternalizeUrls :: String -> Item String -> Compiler (Item String)
 unExternalizeUrls root item = return $ fmap (unExternalizeUrlsWith root) item
 
-unExternalizeUrlsWith :: String -- ^ Path to the site root
-                      -> String -- ^ HTML to unExternalize
-                      -> String -- ^ Resulting HTML
+unExternalizeUrlsWith :: String -> String -> String
 unExternalizeUrlsWith root = withUrls unExt
   where
     unExt x = if root `isPrefixOf` x then unpack $ replace (pack root) empty (pack x) else x
