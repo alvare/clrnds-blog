@@ -62,7 +62,7 @@ body>header h2 {
 body>header a,
 body>header a:hover,
 body>header a:visited {
-    color: black;
+    color: #333;
     text-decoration: none;
 }
 
