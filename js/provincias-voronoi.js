@@ -2,7 +2,7 @@
 
 var dest = d3.select('#container');
 var width = dest.node().getBoundingClientRect().width;
-var height = 600;
+var height = 640;
 
 var svg = d3.select('#container').append('svg')
     .attr('width', width)
@@ -12,8 +12,8 @@ d3.json('/files/provincias-topo.json', function(error, arg){
     if (error) return console.error(error);
 
     var proj = d3.geo.albers()
-        .center([-10, -36])
-        .rotate([55, 0, 0])
+        .center([0, -39])
+        .rotate([65, 0, 0])
         .parallels([-20, -56])
         .scale(1000)
         .translate([width / 2, height / 2]);
