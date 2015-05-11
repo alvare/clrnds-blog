@@ -1,0 +1,455 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -57.582333,
+          -38.017944
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/aldosivi/images/escudo.jpg",
+        "estadio": "Estadio José María Minella",
+        "club": "CLUB ATLÉTICO Aldosivi"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.472583,
+          -34.606028
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/argentinosjuniors_gr.jpg",
+        "estadio": "Estadio Diego Armando Maradona",
+        "club": "ASOCIACION ATLETICA ARGENTINOS JUNIORS"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.340278,
+          -34.678333
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/arsenal_gr.jpg",
+        "estadio": "Estadio Julio Humberto Grondona",
+        "club": "ARSENAL FÚTBOL CLUB"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -61.481944,
+          -31.25
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/atleticoRafelGr.jpg",
+        "estadio": "Estadio Nuevo Monumental",
+        "club": "A.M.S. y D. ATLÉTICO DE RAFAELA"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.387544,
+          -34.750847
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/banfield_gr.jpg",
+        "estadio": "Estadio Florencio Sola",
+        "club": "CLUB ATLÉTICO BANFIELD"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -64.206125,
+          -31.403625
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/belgranoGr.jpg",
+        "estadio": "Estadio Julio César Villagra",
+        "club": "CLUB ATLÉTICO BELGRANO (Córdoba)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.36465,
+          -34.63565
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/boca_gr.jpg",
+        "estadio": "Estadio La Bombonera",
+        "club": "CLUB ATLÉTICO BOCA JUNIORS"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -60.725394,
+          -31.663217
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/colon_gr.jpg",
+        "estadio": "Estadio Brigadier General Estanislao López",
+        "club": "CLUB ATLÉTICO COLON (Santa Fe)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -55.852222,
+          -27.498611
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/mutual-crucero-del-norte/images/escudo.jpg",
+        "estadio": "Estadio Comandante Andrés Guacurarí",
+        "club": "CLUB CRUCERO DEL NORTE"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -57.932592,
+          -34.910975
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/gimnasia_esgrima_gr.jpg",
+        "estadio": "Estadio Juan Carmelo Zerillo",
+        "club": "CLUB DE GIMNASIA Y ESGRIMA LA PLATA"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.286511,
+          -34.821753
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/defensa-y-justicia/imagen/Escudo-Defensa-y-Justicia.jpg",
+        "estadio": "Estadio Norberto \"Tito\" Tomaghello",
+        "club": "CLUB SOCIAL y DEPORTIVO DEFENSA Y JUSTICIA"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -57.989028,
+          -34.91375
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/estudiantes_gr.jpg",
+        "estadio": "Estadio Ciudad de La Plata",
+        "club": "CLUB ESTUDIANTES DE LA PLATA"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -68.839444,
+          -32.920278
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/godoy_gr.jpg",
+        "estadio": "Estadio Feliciano Gambarte",
+        "club": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA (Mendoza)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.396511,
+          -34.643494
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/huracan_gr.jpg",
+        "estadio": "Estadio Tomás Adolfo Ducó",
+        "club": "CLUB ATLÉTICO HURACÁN"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.370969,
+          -34.670267
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/independiente_gr.jpg",
+        "estadio": "Estadio Libertadores de América",
+        "club": "CLUB ATLÉTICO INDEPENDIENTE"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.383806,
+          -34.717667
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/lanus_gr.jpg",
+        "estadio": "Estadio Ciudad de Lanús",
+        "club": "CLUB ATLÉTICO LANUS"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -60.661444,
+          -32.956056
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/newells_gr.jpg",
+        "estadio": "Estadio Marcelo A. Bielsa",
+        "club": "CLUB ALÉTICO NEWELL’S OLD BOYS"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.4996,
+          -34.667919
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/nueva-chicago/images/escudo.jpg",
+        "estadio": "Estadio Nueva Chicago",
+        "club": "CLUB ATLÉTICO NUEVA CHICAGO"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -62.275833,
+          -38.726944
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/olimpo/escudoGr.jpg",
+        "estadio": "Estadio Roberto Natalio Carminatti",
+        "club": "CLUB OLIMPO (Bahía Blanca)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.251889,
+          -34.741778
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/quilmes/escudo.jpg",
+        "estadio": "Estadio Centenario Dr. José Luis Meiszner",
+        "club": "QUILMES ATLÉTICO CLUB"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.368583,
+          -34.667556
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/racing_gr.jpg",
+        "estadio": "Estadio Presidente Juan Domingo Perón",
+        "club": "RACING CLUB"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.449736,
+          -34.545319
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/river_gr.jpg",
+        "estadio": "Estadio Monumental Antonio Vespucio Liberti",
+        "club": "CLUB ATLÉTICO RIVER PLATE"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -60.674567,
+          -32.913997
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/rosario_gr.jpg",
+        "estadio": "Estadio Gigante de Arroyito",
+        "club": "CLUB ATLÉTICO ROSARIO CENTRAL"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.440119,
+          -34.652064
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/sanLorenzo_gr.jpg",
+        "estadio": "Estadio Pedro Bidegain",
+        "club": "CLUB ATLÉTICO SAN LORENZO DE ALMAGRO"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -68.529631,
+          -31.519582
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/sanJuanGR.jpg",
+        "estadio": "Estadio Ingeniero Hilario Sánchez",
+        "club": "CLUB ATLÉTICO SAN MARTIN DE SAN JUAN"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -60.929278,
+          -34.585356
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/sarmiento-de-junin/images/escudo.jpg",
+        "estadio": "Estadio Eva Perón",
+        "club": "CLUB ATLÉTICO SARMIENTO (Junín)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.399508,
+          -34.782286
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/temperley/images/escudo.jpg",
+        "estadio": "Estadio Alfredo Beranger",
+        "club": "CLUB ATLÉTICO TEMPERLEY"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.542219,
+          -34.449333
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/tigre_gr.jpg",
+        "estadio": "Estadio José Dellagiovanna",
+        "club": "CLUB ATLÉTICO TIGRE"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -60.715867,
+          -31.631853
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/unionSantafeGR.jpg",
+        "estadio": "Estadio 15 de Abril",
+        "club": "CLUB ATLÉTICO UNION (Santa Fe)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -58.520711,
+          -34.635375
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "pic": "/clubes/images/velez_gr.jpg",
+        "estadio": "Estadio José Amalfitani Stadium",
+        "club": "CLUB ATLÉTICO VELEZ SARSFIELD"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}
