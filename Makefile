@@ -16,4 +16,4 @@ clean:
 	./dist/build/blog/blog clean
 
 publish:
-	@rsync -azP _site/ linoder@212.71.246.120:/var/www/blog
+	@rsync -azP _site/ linoder@clrnd.com.ar:/var/www/blog
