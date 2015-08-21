@@ -46,8 +46,6 @@ function render(arg, equipos, selector, width, height, proj){
         .pointRadius(2)
         .projection(proj);
 
-    var voronoi = d3.geom.voronoi();
-
     // border
     svg.append('path')
         .datum(border)
@@ -59,6 +57,8 @@ function render(arg, equipos, selector, width, height, proj){
         .attr('d', path);
 
     // voronois
+    var voronoi = d3.geom.voronoi();
+
     var points = equipos.features.map(function(d){
         return proj(d.geometry.coordinates);
     });
