@@ -1,7 +1,7 @@
 ---
 title: Primera Division Voronoi
 author: Ezequiel A. Alvarez
-tags: fútbol, d3
+tags: viz, fútbol, d3
 ---
 
 Se me dio por hacer un mapa de los estadios de los equipos de Primera División
