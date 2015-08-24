@@ -39,7 +39,7 @@ $ evince discogs2pg.ps
 
 and saw this, which may well be the epitomical example of a space leak:
 
-<img src="/files/discogs2pg_memory_hy1.png">
+<img class="img-responsive" src="/files/discogs2pg_memory_hy1.png">
 
 So I [googled ARR_WORDS](http://stackoverflow.com/questions/7241470/what-is-arr-words-in-a-ghc-heap-profile)
 and found it has to do with ByteStrings (I use a lot of those here because performance). The thing is,
@@ -134,7 +134,7 @@ store conf values = do
 
 Which generates this pretty graph:
 
-<img src="/files/discogs2pg_memory_hy2.png">
+<img class="img-responsive" src="/files/discogs2pg_memory_hy2.png">
 
 Somehow a list of `String` was causing a 60MB space leak of ARR_WORDS.
 
