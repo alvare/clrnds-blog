@@ -141,3 +141,17 @@ Somehow a list of `String` was causing a 60MB space leak of ARR_WORDS.
 Damn.
 
 I love Haskell.
+
+## UPDATE: The explanation
+
+Over at reddit [pycube](https://www.reddit.com/user/pycube) offers what
+seems to be a very reasonable explanation ([link](https://www.reddit.com/r/haskell/comments/3hvrm9/a_haskell_space_leak/cubp2on)).
+
+Basically, even though `getTables` doesn't depend on `values`, GHC doesn't really know this, all it can see is `getTables values`.
+
+So in the leaky version, it doesn't GC the things inside `values` because it thinks it's gonna need them later for the last `getTables`!
+Meanwhile in the fixed version, nothing prevents those things from being GCed.
+
+That's also why the profile says the leak is from ARR_WORDS, because what was leaking was `values`.
+
+Thanks to pycube and the folks over at reddit for helping with this!

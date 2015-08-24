@@ -15,5 +15,5 @@ watch: dist/build/blog/blog
 clean:
 	./dist/build/blog/blog clean
 
-publish:
+publish: build
 	@rsync -azP _site/ linoder@clrnd.com.ar:/var/www/blog
