@@ -1,10 +1,12 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import Data.Functor ((<$>))
-import Data.List (isPrefixOf)
-import Data.Monoid ((<>))
-import Data.Text (pack, unpack, replace, empty)
+import           Data.Functor ((<$>))
+import           Data.List (isPrefixOf)
+import           Data.Monoid ((<>))
+import           Data.Text (pack, unpack, replace, empty)
+import qualified Data.Set as S
+import           Text.Pandoc.Options
 
 import Hakyll
 
@@ -161,3 +163,15 @@ postList tags pattern preprocess' = do
     posts <- loadAll pattern
     processed <- preprocess' posts
     applyTemplateList postItemTpl (tagsCtx tags) processed
+
+pandocMathCompiler :: Compiler (Item String)
+pandocMathCompiler =
+    let mathExtensions = [Ext_tex_math_dollars, Ext_tex_math_double_backslash,
+                          Ext_latex_macros]
+        defaultExtensions = writerExtensions defaultHakyllWriterOptions
+        newExtensions = foldr S.insert defaultExtensions mathExtensions
+        writerOptions = defaultHakyllWriterOptions {
+                          writerExtensions = newExtensions,
+                          writerHTMLMathMethod = MathJax ""
+                        }
+    in pandocCompilerWith defaultHakyllReaderOptions writerOptions
