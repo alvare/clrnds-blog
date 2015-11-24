@@ -10,7 +10,6 @@ In my eternal quest to learn Haskell I decided to implement a game in ncurses.
 
 The code is over at [GitHub](https://github.com/alvare/tateti-tateti) if
 anyone wants to check it out.
-And yes, ncurses, like those freaky terminal apps some Linux users love to brag about.
 
 The game is "Ultimate Tic Tac Toe", a variant on
 classic 3x3 Tic Tac Toe where inside each of the 9 cells there is another,
