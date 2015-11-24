@@ -1,19 +1,19 @@
 all: build
 
-build: dist/build/blog/blog
-	./dist/build/blog/blog build
+build: blog
+	stack exec blog build
 
-dist/build/blog/blog: Main.hs
-	cabal build
+blog: Main.hs
+	stack build
 
 new:
 	@./new_post.sh
 
 watch: dist/build/blog/blog
-	./dist/build/blog/blog watch
+	stack exec blog watch
 
 clean:
-	./dist/build/blog/blog clean
+	stack exec blog clean
 
 publish: build
 	@rsync -azP _site/ linoder@clrnd.com.ar:/var/www/blog
