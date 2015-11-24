@@ -212,7 +212,7 @@ and just draws the horizontal and vertical lines.
 Since smaller boards get colored when a player wins, we have to get their winners
 and colors first.
 
-Also `(,) <$> offsets <*> offets` is funny. It builds a list of pairs
+Also `(,) <$> offsets <*> offsets` is funny. It builds a list of pairs
 of all combinations of offsets.
 Basically \\( \\{ (x, y) : x \\in S , y \\in S \\} \\)
 with \\( S = \\{ 1, 1+8, 1+8+8 \\} \\) because each big-board cell
@@ -245,7 +245,7 @@ mainLoop w1 w2 colors = do
             Free -> do
                 p <- use (gBoardState . bsPosition)
                 use (gBoardState . bsAx p . bsWinner) >>= \case
-                    -- unless board is already closed (has a winnner)
+                    -- unless board is already closed (has a winner)
                     Just _ -> return ()
 
                     -- board is open, enter
