@@ -306,12 +306,17 @@ I think that's super neat.
 ## Wrapping up
 
 This was not my first time with a monad transformer, nor with
-lenses, but I did learn some things. For instance, I could read some lens' errors!
+lenses, but I did learn some things. For example, I could read some lens' errors!
 
 While I can use lenses, the abstraction is quite ... abstract. But this time
 I think I got a step closer to understanding it.
 
-Testing was quite easy too. Since I could just spit the `GameState` to stderr (and pipe it to a file), I would start the game with a board full of moves!
+Testing was quite easy too. Since I could just spit the `GameState` to stderr
+(and pipe it to a file), I would start the game with a board full of moves!
 All of this for free deriving Show and Read instances.
+
+I was also about to build a server/client mode for online multiplayer,
+but I thought: "if anyone is ever gonna play this online,
+they surely know how to `screen -x`".
 
 In the end, doing something actually playable is always fun :D
