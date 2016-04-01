@@ -9,7 +9,7 @@ blog: Main.hs
 new:
 	@./new_post.sh
 
-watch: dist/build/blog/blog
+watch:
 	stack exec blog watch
 
 clean:

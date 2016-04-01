@@ -1,0 +1,874 @@
+[
+  [
+    {
+      "season": 1,
+      "score": 7.6,
+      "date": "26 Mar. 2005",
+      "title": "Rose",
+      "number": 1
+    },
+    {
+      "season": 1,
+      "score": 7.6,
+      "date": "2 Apr. 2005",
+      "title": "The End of the World",
+      "number": 2
+    },
+    {
+      "season": 1,
+      "score": 7.7,
+      "date": "9 Apr. 2005",
+      "title": "The Unquiet Dead",
+      "number": 3
+    },
+    {
+      "season": 1,
+      "score": 7,
+      "date": "16 Apr. 2005",
+      "title": "Aliens of London",
+      "number": 4
+    },
+    {
+      "season": 1,
+      "score": 7,
+      "date": "23 Apr. 2005",
+      "title": "World War Three",
+      "number": 5
+    },
+    {
+      "season": 1,
+      "score": 8.7,
+      "date": "30 Apr. 2005",
+      "title": "Dalek",
+      "number": 6
+    },
+    {
+      "season": 1,
+      "score": 7.3,
+      "date": "7 May 2005",
+      "title": "The Long Game",
+      "number": 7
+    },
+    {
+      "season": 1,
+      "score": 8.4,
+      "date": "14 May 2005",
+      "title": "Father's Day",
+      "number": 8
+    },
+    {
+      "season": 1,
+      "score": 9.1,
+      "date": "21 May 2005",
+      "title": "The Empty Child",
+      "number": 9
+    },
+    {
+      "season": 1,
+      "score": 9.1,
+      "date": "28 May 2005",
+      "title": "The Doctor Dances",
+      "number": 10
+    },
+    {
+      "season": 1,
+      "score": 7.2,
+      "date": "4 Jun. 2005",
+      "title": "Boom Town",
+      "number": 11
+    },
+    {
+      "season": 1,
+      "score": 8.7,
+      "date": "11 Jun. 2005",
+      "title": "Bad Wolf",
+      "number": 12
+    },
+    {
+      "season": 1,
+      "score": 9.1,
+      "date": "18 Jun. 2005",
+      "title": "The Parting of the Ways",
+      "number": 13
+    }
+  ],
+  [
+    {
+      "season": 2,
+      "score": 8.1,
+      "date": "25 Dec. 2005",
+      "title": "The Christmas Invasion",
+      "number": 0
+    },
+    {
+      "season": 2,
+      "score": 7.5,
+      "date": "15 Apr. 2006",
+      "title": "New Earth",
+      "number": 1
+    },
+    {
+      "season": 2,
+      "score": 7.9,
+      "date": "22 Apr. 2006",
+      "title": "Tooth and Claw",
+      "number": 2
+    },
+    {
+      "season": 2,
+      "score": 8.3,
+      "date": "29 Apr. 2006",
+      "title": "School Reunion",
+      "number": 3
+    },
+    {
+      "season": 2,
+      "score": 9.3,
+      "date": "6 May 2006",
+      "title": "The Girl in the Fireplace",
+      "number": 4
+    },
+    {
+      "season": 2,
+      "score": 7.8,
+      "date": "13 May 2006",
+      "title": "Rise of the Cybermen",
+      "number": 5
+    },
+    {
+      "season": 2,
+      "score": 7.9,
+      "date": "20 May 2006",
+      "title": "The Age of Steel",
+      "number": 6
+    },
+    {
+      "season": 2,
+      "score": 7,
+      "date": "27 May 2006",
+      "title": "The Idiot's Lantern",
+      "number": 7
+    },
+    {
+      "season": 2,
+      "score": 8.7,
+      "date": "3 Jun. 2006",
+      "title": "The Impossible Planet",
+      "number": 8
+    },
+    {
+      "season": 2,
+      "score": 8.9,
+      "date": "10 Jun. 2006",
+      "title": "The Satan Pit",
+      "number": 9
+    },
+    {
+      "season": 2,
+      "score": 6.3,
+      "date": "17 Jun. 2006",
+      "title": "Love & Monsters",
+      "number": 10
+    },
+    {
+      "season": 2,
+      "score": 6.1,
+      "date": "24 Jun. 2006",
+      "title": "Fear Her",
+      "number": 11
+    },
+    {
+      "season": 2,
+      "score": 8.5,
+      "date": "1 Jul. 2006",
+      "title": "Army of Ghosts",
+      "number": 12
+    },
+    {
+      "season": 2,
+      "score": 9.3,
+      "date": "8 Jul. 2006",
+      "title": "Doomsday",
+      "number": 13
+    }
+  ],
+  [
+    {
+      "season": 3,
+      "score": 7.6,
+      "date": "25 Dec. 2006",
+      "title": "The Runaway Bride",
+      "number": 0
+    },
+    {
+      "season": 3,
+      "score": 8,
+      "date": "31 Mar. 2007",
+      "title": "Smith and Jones",
+      "number": 1
+    },
+    {
+      "season": 3,
+      "score": 7.8,
+      "date": "7 Apr. 2007",
+      "title": "The Shakespeare Code",
+      "number": 2
+    },
+    {
+      "season": 3,
+      "score": 8,
+      "date": "14 Apr. 2007",
+      "title": "Gridlock",
+      "number": 3
+    },
+    {
+      "season": 3,
+      "score": 7.1,
+      "date": "21 Apr. 2007",
+      "title": "Daleks in Manhattan",
+      "number": 4
+    },
+    {
+      "season": 3,
+      "score": 7.1,
+      "date": "28 Apr. 2007",
+      "title": "Evolution of the Daleks",
+      "number": 5
+    },
+    {
+      "season": 3,
+      "score": 6.7,
+      "date": "5 May 2007",
+      "title": "The Lazarus Experiment",
+      "number": 6
+    },
+    {
+      "season": 3,
+      "score": 7.5,
+      "date": "19 May 2007",
+      "title": "42",
+      "number": 7
+    },
+    {
+      "season": 3,
+      "score": 8.9,
+      "date": "26 May 2007",
+      "title": "Human Nature",
+      "number": 8
+    },
+    {
+      "season": 3,
+      "score": 9.2,
+      "date": "2 Jun. 2007",
+      "title": "The Family of Blood",
+      "number": 9
+    },
+    {
+      "season": 3,
+      "score": 9.8,
+      "date": "9 Jun. 2007",
+      "title": "Blink",
+      "number": 10
+    },
+    {
+      "season": 3,
+      "score": 8.8,
+      "date": "16 Jun. 2007",
+      "title": "Utopia",
+      "number": 11
+    },
+    {
+      "season": 3,
+      "score": 8.8,
+      "date": "23 Jun. 2007",
+      "title": "The Sound of Drums",
+      "number": 12
+    },
+    {
+      "season": 3,
+      "score": 8.4,
+      "date": "30 Jun. 2007",
+      "title": "Last of the Time Lords",
+      "number": 13
+    }
+  ],
+  [
+    {
+      "season": 4,
+      "score": 7.6,
+      "date": "25 Dec. 2007",
+      "title": "Voyage of the Damned",
+      "number": 0
+    },
+    {
+      "season": 4,
+      "score": 7.7,
+      "date": "5 Apr. 2008",
+      "title": "Partners in Crime",
+      "number": 1
+    },
+    {
+      "season": 4,
+      "score": 8,
+      "date": "12 Apr. 2008",
+      "title": "The Fires of Pompeii",
+      "number": 2
+    },
+    {
+      "season": 4,
+      "score": 8,
+      "date": "19 Apr. 2008",
+      "title": "Planet of the Ood",
+      "number": 3
+    },
+    {
+      "season": 4,
+      "score": 7.5,
+      "date": "26 Apr. 2008",
+      "title": "The Sontaran Stratagem",
+      "number": 4
+    },
+    {
+      "season": 4,
+      "score": 7.6,
+      "date": "3 May 2008",
+      "title": "The Poison Sky",
+      "number": 5
+    },
+    {
+      "season": 4,
+      "score": 7.7,
+      "date": "10 May 2008",
+      "title": "The Doctor's Daughter",
+      "number": 6
+    },
+    {
+      "season": 4,
+      "score": 7.7,
+      "date": "17 May 2008",
+      "title": "The Unicorn and the Wasp",
+      "number": 7
+    },
+    {
+      "season": 4,
+      "score": 9.3,
+      "date": "31 May 2008",
+      "title": "Silence in the Library",
+      "number": 8
+    },
+    {
+      "season": 4,
+      "score": 9.4,
+      "date": "7 Jun. 2008",
+      "title": "Forest of the Dead",
+      "number": 9
+    },
+    {
+      "season": 4,
+      "score": 8.9,
+      "date": "14 Jun. 2008",
+      "title": "Midnight",
+      "number": 10
+    },
+    {
+      "season": 4,
+      "score": 8.8,
+      "date": "21 Jun. 2008",
+      "title": "Turn Left",
+      "number": 11
+    },
+    {
+      "season": 4,
+      "score": 9,
+      "date": "28 Jun. 2008",
+      "title": "The Stolen Earth",
+      "number": 12
+    },
+    {
+      "season": 4,
+      "score": 9.1,
+      "date": "5 Jul. 2008",
+      "title": "Journey's End",
+      "number": 13
+    }
+  ],
+  [
+    {
+      "season": 5,
+      "score": 8.8,
+      "date": "3 Apr. 2010",
+      "title": "The Eleventh Hour",
+      "number": 1
+    },
+    {
+      "season": 5,
+      "score": 7.7,
+      "date": "10 Apr. 2010",
+      "title": "The Beast Below",
+      "number": 2
+    },
+    {
+      "season": 5,
+      "score": 6.8,
+      "date": "17 Apr. 2010",
+      "title": "Victory of the Daleks",
+      "number": 3
+    },
+    {
+      "season": 5,
+      "score": 8.7,
+      "date": "24 Apr. 2010",
+      "title": "The Time of Angels",
+      "number": 4
+    },
+    {
+      "season": 5,
+      "score": 8.6,
+      "date": "1 May 2010",
+      "title": "Flesh and Stone",
+      "number": 5
+    },
+    {
+      "season": 5,
+      "score": 7.1,
+      "date": "8 May 2010",
+      "title": "The Vampires of Venice",
+      "number": 6
+    },
+    {
+      "season": 5,
+      "score": 8.2,
+      "date": "15 May 2010",
+      "title": "Amy's Choice",
+      "number": 7
+    },
+    {
+      "season": 5,
+      "score": 7.3,
+      "date": "22 May 2010",
+      "title": "The Hungry Earth",
+      "number": 8
+    },
+    {
+      "season": 5,
+      "score": 7.4,
+      "date": "29 May 2010",
+      "title": "Cold Blood",
+      "number": 9
+    },
+    {
+      "season": 5,
+      "score": 9.2,
+      "date": "5 Jun. 2010",
+      "title": "Vincent and the Doctor",
+      "number": 10
+    },
+    {
+      "season": 5,
+      "score": 8.2,
+      "date": "12 Jun. 2010",
+      "title": "The Lodger",
+      "number": 11
+    },
+    {
+      "season": 5,
+      "score": 9.1,
+      "date": "19 Jun. 2010",
+      "title": "The Pandorica Opens",
+      "number": 12
+    },
+    {
+      "season": 5,
+      "score": 9.2,
+      "date": "26 Jun. 2010",
+      "title": "The Big Bang",
+      "number": 13
+    }
+  ],
+  [
+    {
+      "season": 6,
+      "score": 8.6,
+      "date": "25 Dec. 2010",
+      "title": "A Christmas Carol",
+      "number": 0
+    },
+    {
+      "season": 6,
+      "score": 8.9,
+      "date": "23 Apr. 2011",
+      "title": "The Impossible Astronaut",
+      "number": 1
+    },
+    {
+      "season": 6,
+      "score": 8.9,
+      "date": "30 Apr. 2011",
+      "title": "Day of the Moon",
+      "number": 2
+    },
+    {
+      "season": 6,
+      "score": 6.7,
+      "date": "7 May 2011",
+      "title": "The Curse of the Black Spot",
+      "number": 3
+    },
+    {
+      "season": 6,
+      "score": 9.1,
+      "date": "14 May 2011",
+      "title": "The Doctor's Wife",
+      "number": 4
+    },
+    {
+      "season": 6,
+      "score": 7.3,
+      "date": "21 May 2011",
+      "title": "The Rebel Flesh",
+      "number": 5
+    },
+    {
+      "season": 6,
+      "score": 7.5,
+      "date": "28 May 2011",
+      "title": "The Almost People",
+      "number": 6
+    },
+    {
+      "season": 6,
+      "score": 9.1,
+      "date": "4 Jun. 2011",
+      "title": "A Good Man Goes to War",
+      "number": 7
+    },
+    {
+      "season": 6,
+      "score": 8.2,
+      "date": "27 Aug. 2011",
+      "title": "Let's Kill Hitler",
+      "number": 8
+    },
+    {
+      "season": 6,
+      "score": 7.1,
+      "date": "3 Sep. 2011",
+      "title": "Night Terrors",
+      "number": 9
+    },
+    {
+      "season": 6,
+      "score": 8.5,
+      "date": "10 Sep. 2011",
+      "title": "The Girl Who Waited",
+      "number": 10
+    },
+    {
+      "season": 6,
+      "score": 8,
+      "date": "17 Sep. 2011",
+      "title": "The God Complex",
+      "number": 11
+    },
+    {
+      "season": 6,
+      "score": 7.8,
+      "date": "24 Sep. 2011",
+      "title": "Closing Time",
+      "number": 12
+    },
+    {
+      "season": 6,
+      "score": 8.8,
+      "date": "1 Oct. 2011",
+      "title": "The Wedding of River Song",
+      "number": 13
+    }
+  ],
+  [
+    {
+      "season": 7,
+      "score": 7.4,
+      "date": "25 Dec. 2011",
+      "title": "The Doctor, the Widow and the Wardrobe",
+      "number": 0
+    },
+    {
+      "season": 7,
+      "score": 8.8,
+      "date": "1 Sep. 2012",
+      "title": "Asylum of the Daleks",
+      "number": 1
+    },
+    {
+      "season": 7,
+      "score": 7.6,
+      "date": "8 Sep. 2012",
+      "title": "Dinosaurs on a Spaceship",
+      "number": 2
+    },
+    {
+      "season": 7,
+      "score": 7.4,
+      "date": "15 Sep. 2012",
+      "title": "A Town Called Mercy",
+      "number": 3
+    },
+    {
+      "season": 7,
+      "score": 7.6,
+      "date": "22 Sep. 2012",
+      "title": "The Power of Three",
+      "number": 4
+    },
+    {
+      "season": 7,
+      "score": 9,
+      "date": "29 Sep. 2012",
+      "title": "The Angels Take Manhattan",
+      "number": 5
+    },
+    {
+      "season": 7,
+      "score": 8.5,
+      "date": "25 Dec. 2012",
+      "title": "The Snowmen",
+      "number": 6
+    },
+    {
+      "season": 7,
+      "score": 8,
+      "date": "30 Mar. 2013",
+      "title": "The Bells of Saint John",
+      "number": 7
+    },
+    {
+      "season": 7,
+      "score": 7.3,
+      "date": "6 Apr. 2013",
+      "title": "The Rings of Akhaten",
+      "number": 8
+    },
+    {
+      "season": 7,
+      "score": 7.3,
+      "date": "13 Apr. 2013",
+      "title": "Cold War",
+      "number": 9
+    },
+    {
+      "season": 7,
+      "score": 7.8,
+      "date": "20 Apr. 2013",
+      "title": "Hide",
+      "number": 10
+    },
+    {
+      "season": 7,
+      "score": 7.7,
+      "date": "27 Apr. 2013",
+      "title": "Journey to the Centre of the TARDIS",
+      "number": 11
+    },
+    {
+      "season": 7,
+      "score": 7.4,
+      "date": "4 May 2013",
+      "title": "The Crimson Horror",
+      "number": 12
+    },
+    {
+      "season": 7,
+      "score": 7.5,
+      "date": "11 May 2013",
+      "title": "Nightmare in Silver",
+      "number": 13
+    },
+    {
+      "season": 7,
+      "score": 9.2,
+      "date": "18 May 2013",
+      "title": "The Name of the Doctor",
+      "number": 14
+    }
+  ],
+  [
+    {
+      "season": 8,
+      "score": 8,
+      "date": "23 Aug. 2014",
+      "title": "Deep Breath",
+      "number": 1
+    },
+    {
+      "season": 8,
+      "score": 7.8,
+      "date": "30 Aug. 2014",
+      "title": "Into the Dalek",
+      "number": 2
+    },
+    {
+      "season": 8,
+      "score": 7.1,
+      "date": "6 Sep. 2014",
+      "title": "Robot of Sherwood",
+      "number": 3
+    },
+    {
+      "season": 8,
+      "score": 9,
+      "date": "13 Sep. 2014",
+      "title": "Listen",
+      "number": 4
+    },
+    {
+      "season": 8,
+      "score": 8.1,
+      "date": "20 Sep. 2014",
+      "title": "Time Heist",
+      "number": 5
+    },
+    {
+      "season": 8,
+      "score": 7.5,
+      "date": "27 Sep. 2014",
+      "title": "The Caretaker",
+      "number": 6
+    },
+    {
+      "season": 8,
+      "score": 7.1,
+      "date": "4 Oct. 2014",
+      "title": "Kill the Moon",
+      "number": 7
+    },
+    {
+      "season": 8,
+      "score": 8.5,
+      "date": "11 Oct. 2014",
+      "title": "Mummy on the Orient Express",
+      "number": 8
+    },
+    {
+      "season": 8,
+      "score": 8.6,
+      "date": "18 Oct. 2014",
+      "title": "Flatline",
+      "number": 9
+    },
+    {
+      "season": 8,
+      "score": 6.3,
+      "date": "25 Oct. 2014",
+      "title": "In the Forest of the Night",
+      "number": 10
+    },
+    {
+      "season": 8,
+      "score": 8.8,
+      "date": "1 Nov. 2014",
+      "title": "Dark Water",
+      "number": 11
+    },
+    {
+      "season": 8,
+      "score": 8,
+      "date": "8 Nov. 2014",
+      "title": "Death in Heaven",
+      "number": 12
+    }
+  ],
+  [
+    {
+      "season": 9,
+      "score": 8.4,
+      "date": "25 Dec. 2014",
+      "title": "Last Christmas",
+      "number": 0
+    },
+    {
+      "season": 9,
+      "score": 8.7,
+      "date": "19 Sep. 2015",
+      "title": "The Magician's Apprentice",
+      "number": 1
+    },
+    {
+      "season": 9,
+      "score": 8.6,
+      "date": "26 Sep. 2015",
+      "title": "The Witch's Familiar",
+      "number": 2
+    },
+    {
+      "season": 9,
+      "score": 8.4,
+      "date": "3 Oct. 2015",
+      "title": "Under the Lake",
+      "number": 3
+    },
+    {
+      "season": 9,
+      "score": 8.2,
+      "date": "10 Oct. 2015",
+      "title": "Before the Flood",
+      "number": 4
+    },
+    {
+      "season": 9,
+      "score": 7.9,
+      "date": "17 Oct. 2015",
+      "title": "The Girl Who Died",
+      "number": 5
+    },
+    {
+      "season": 9,
+      "score": 7.9,
+      "date": "24 Oct. 2015",
+      "title": "The Woman Who Lived",
+      "number": 6
+    },
+    {
+      "season": 9,
+      "score": 7.9,
+      "date": "31 Oct. 2015",
+      "title": "The Zygon Invasion",
+      "number": 7
+    },
+    {
+      "season": 9,
+      "score": 8.7,
+      "date": "7 Nov. 2015",
+      "title": "The Zygon Inversion",
+      "number": 8
+    },
+    {
+      "season": 9,
+      "score": 6.2,
+      "date": "14 Nov. 2015",
+      "title": "Sleep No More",
+      "number": 9
+    },
+    {
+      "season": 9,
+      "score": 8.8,
+      "date": "21 Nov. 2015",
+      "title": "Face the Raven",
+      "number": 10
+    },
+    {
+      "season": 9,
+      "score": 9.6,
+      "date": "28 Nov. 2015",
+      "title": "Heaven Sent",
+      "number": 11
+    },
+    {
+      "season": 9,
+      "score": 9,
+      "date": "5 Dec. 2015",
+      "title": "Hell Bent",
+      "number": 12
+    }
+  ]
+]
