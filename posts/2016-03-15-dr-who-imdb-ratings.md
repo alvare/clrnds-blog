@@ -92,7 +92,6 @@ Good bye.
 
 #info {
     font: 13px sans-serif;
-    padding-left: 1em;
 }
 
 .axis path,
