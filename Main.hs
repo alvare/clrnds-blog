@@ -134,7 +134,7 @@ feedConfiguration = FeedConfiguration
     , feedDescription = "blog"
     , feedAuthorName  = "Ezequiel A. Alvarez"
     , feedAuthorEmail = "welcometothechango@gmail.com"
-    , feedRoot        = "http://blog.url"
+    , feedRoot        = "http://clrnd.com.ar"
     }
 
 externalizeUrls :: String -> Item String -> Compiler (Item String)
