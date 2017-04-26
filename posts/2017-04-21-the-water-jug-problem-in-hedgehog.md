@@ -138,6 +138,8 @@ We can load this file using `stack ghci --package=hedgehog-0.1`, after adding he
 
 Isn't that pretty? It even has colors on my terminal.
 
-ALso, the solution is exactly like the one the Hypothesis post had! (I saw other solutions, some even not optimal, but this one was the most common).
+Also, the solution is exactly the same the Hypothesis post had! (I saw other solutions, some even not optimal, but this one was the most common).
 
 I think I'm gonna like Hedgehog.
+
+In the meantime, I'll see about implementing the [generic solution](http://vigna.di.unimi.it/ftp/papers/Jugs.pdf) some day.
