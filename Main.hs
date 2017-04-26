@@ -131,7 +131,7 @@ tagsCtx tags =
 feedConfiguration :: FeedConfiguration
 feedConfiguration = FeedConfiguration
     { feedTitle       = "clrnd's - RSS feed"
-    , feedDescription = "blog"
+    , feedDescription = "Soy un pibe de Lanús al que le gustan los cartogramas y Haskell.\n Estudio Cs. de la Computación en la UBA y el flan me gusta con crema."
     , feedAuthorName  = "Ezequiel A. Alvarez"
     , feedAuthorEmail = "welcometothechango@gmail.com"
     , feedRoot        = "http://clrnd.com.ar"
