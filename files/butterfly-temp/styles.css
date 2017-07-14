@@ -1,0 +1,29 @@
+body {
+    max-width: 900px;
+}
+
+.limit {
+    stroke: #223;
+    fill: none;
+}
+
+.earth path {
+    stroke: black;
+    stroke-width: 0.5;
+    fill: none;
+}
+
+.voronoi path {
+    stroke: none;
+    fill-opacity: 0.8;
+    shape-rendering: crispedges;
+}
+
+.legend .label {
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+.legend .swatch {
+    fill-opacity: 0.8;
+}
