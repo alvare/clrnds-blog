@@ -1,4 +1,4 @@
-"use setrict";
+"use strict";
 
 d3.queue()
 .defer(d3.json, '/files/butterfly-temp/earth.json')
