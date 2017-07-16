@@ -6,7 +6,7 @@ tags: viz, d3, waterman
 
 <link rel="stylesheet" type="text/css" href="/files/butterfly-temp/styles.css" />
 
-Yesterday I finally decided to port our D3v3 viz code to the latest D3v4,
+Yesterday I finally decided to port our D3 v3 viz code to the latest D3 v4,
 and it was a really pleaseant experience actually!
 This came as a nice surprise, since most JavaScript libraries
 don't offer a nice upgrading experience, in my oppinion
@@ -16,14 +16,14 @@ Also, this semester me and some class mates did a lot of viz work for our [Numer
 which resulted in some [really](/files/hist-cant-gamma-k.png) [nice](/files/ranking_distance.png) [graphics](/files/world_temp_cross_full_poly.png).
 Yet there was a specific one we didn't have enough time to make: a map showing the average yearly temperature of the planet in a polyhedral projection.
 
-So today, finally with some free time available, I made it! The thing is, the data I have is per city, so what can be done?
+So today, finally with some free time available, and the D3 knowledge refreshened, I made it. The thing is, the data I have is per city, so what can be done?
 I have been wanting to use [d3-contour](https://github.com/d3/d3-contour) for some time and thought I finally had found an use case, but no.
 You need an even grid of samples for that, we only scattered cities. So what can be done?
 Well, [another](/posts/2015-05-07-primera-division-voronoi.html) voronoi map!
 
 <div id="map" class="center"></div>
 
-Let me be clear: this is the least statistically significant map that can be shown. Don't show it to your friends.
+Let me be clear: this is the least statistically significant map that can be drawn. Don't show it to your friends.
 
 But also, it looks amazing! Show it to your boss!
 
@@ -59,13 +59,38 @@ svg.append('g')
     .call(legend);
 ```
 
-Oh, and another horribly bad thing going on in this map: `d3.voronoi()` is two dimensional, it's not made for spherical coordinates. This is greatly discussed [here](https://github.com/d3/d3/issues/1820). I have over 3500 cities here so using the `O(n^2)` algorithm mentioned there is just not possible (my tab crashed instantly).
+Another interesting bit is the clip path. Since the Waterman projection is not continuous, we have to cut some pieces of the map away. For that we use two things: that `d3.geoPath()` and the projection know how to render a `{type: 'Sphere'}` GeoJSON datum, and an svg `clipPath` in a `<defs>` element (which we also use tor ender the limit of the world). The full code for the clipping and limit drawing is:
+
+```javascript
+var defs = svg.append('defs');
+
+defs.append('path')
+    .datum({type: 'Sphere'})
+    .attr('id', 'sphere')
+    .attr('d', path);
+
+defs.append('clipPath')
+    .attr('id', 'clip')
+  .append('use')
+    .attr('xlink:href', '#sphere');
+
+svg.append('use')
+    .attr('class', 'limit')
+    .attr('xlink:href', '#sphere');
+```
+
+Followed by `.attr('clip-path', 'url(#clip)')` on the `<path>` elements we want to clip. So simple!
+
+### Anyway
+
+Another horribly bad thing going on in this map: `d3.voronoi()` is two dimensional, it's not made for spherical coordinates. This is greatly discussed [here](https://github.com/d3/d3/issues/1820). I have over 3500 cities here so using the `O(n^2)` algorithm mentioned there is just not possible (my tab crashed instantly).
 
 I hope you liked it or found it useful. The code is [over at GitHub](https://github.com/alvare/clrnds-blog/tree/master/files/butterfly-temp/main.js), like always.
 
 Cheers!
 
 <script src="https://unpkg.com/d3@4"></script>
+<script src="https://unpkg.com/lodash@4"></script>
 <script src="https://unpkg.com/topojson@3"></script>
 <script src="https://unpkg.com/d3-geo-projection@2"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>

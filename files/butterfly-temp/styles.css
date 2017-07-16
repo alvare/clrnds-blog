@@ -2,13 +2,29 @@ body {
     max-width: 900px;
 }
 
+#map {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 58%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .limit {
     stroke: #223;
     fill: none;
 }
 
 .earth path {
-    stroke: black;
+    stroke: #404040;
     stroke-width: 0.5;
     fill: none;
 }
@@ -17,6 +33,11 @@ body {
     stroke: none;
     fill-opacity: 0.8;
     shape-rendering: crispedges;
+}
+
+.title {
+    font-size: 14px;
+    font-family: sans-serif;
 }
 
 .legend .label {

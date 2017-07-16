@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 d3.queue()
 .defer(d3.json, '/files/butterfly-temp/earth.json')
@@ -6,23 +6,30 @@ d3.queue()
 .awaitAll((err, data) => {
     if (err) throw err;
 
-    let ratio = 520/900;
-    var width = d3.select('#map').node().getBoundingClientRect().width;
-    let height = width*ratio
+    let earth_topo = data[0];
+    let cities_csv = data[1];
+
+    var width = 900;
+    let height = 520;
+
+    //remove previous
+    d3.select('#map svg').remove();
 
     let svg = d3.select('#map')
         .append('svg')
-        .attr('width', width)
-        .attr('height', height);
+        .attr('class', 'svg-content')
+        .attr('preserveAspectRatio', 'xMinYMin meet')
+        .attr('viewBox', `0 0 ${width} ${height}`)
 
-    let geo = topojson.feature(data[0], data[0].objects.naturalearth_lowres);
+    let geo = topojson.feature(earth_topo, earth_topo.objects.naturalearth_lowres);
 
     let extent = [[0, 0], [width, height]];
 
     let proj = d3.geoPolyhedralWaterman()
+        .rotate([20, 0])
         .fitExtent(extent, geo);
 
-    let cities = data[1].map(d => {
+    let cities = cities_csv.map(d => {
         d.point = proj([+d.long, +d.lat]);
         d.avg = +d.avg;
         return d;
@@ -66,31 +73,39 @@ d3.queue()
         .ascending(true)
         .scale(scale);
 
-    if (height > 300) {
-        let legend_y = height / 2;
-        svg.append('g')
-            .attr('class', 'legend')
-            .attr('transform', 'translate(10, ' + legend_y + ')')
-            .call(legend);
-    }
-
-
-    // polygons
+    let legend_y = height / 2;
     svg.append('g')
-        .attr('class', 'earth')
-        .selectAll('path')
-        .data(geo.features)
-      .enter().append('path')
-        .attr("clip-path", "url(#clip)")
-        .attr('d', path);
+        .attr('class', 'legend')
+        .attr('transform', 'translate(10, ' + legend_y + ')')
+        .call(legend);
 
+    svg.append('text')
+        .attr('class', 'title')
+        .attr('x', width / 2)
+        .attr('y', 10)
+        .attr('text-anchor', 'middle')
+        .text('Average temperature by city for 1992');
+
+
+    // voronoi paths
     svg.append('g')
         .attr('class', 'voronoi')
         .selectAll('path')
         .data(voro(cities).polygons())
       .enter().append('path')
         .attr('fill', d => d ? scale(d.data.avg) : 'none')
-        .attr("clip-path", "url(#clip)")
+        .attr('clip-path', 'url(#clip)')
         .attr('d', d => d ? 'M' + d.join('L') + 'Z' : null);
 
+    // earth paths
+    svg.append('g')
+        .attr('class', 'earth')
+        .selectAll('path')
+        .data(geo.features)
+      .enter().append('path')
+        .attr('clip-path', 'url(#clip)')
+        .attr('d', path);
 });
+
+function render(earth_topo, cities_csv){
+}

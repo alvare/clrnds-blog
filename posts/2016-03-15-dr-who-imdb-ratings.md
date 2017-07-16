@@ -83,7 +83,7 @@ Question answered.
 
 Good bye.
 
-<script src="/js/lodash.min.js"></script>
+<script src="https://unpkg.com/lodash@4"></script>
 <script src="/js/dr-who-ratings.js"></script>
 <style>
 #viz {
