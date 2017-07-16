@@ -7,9 +7,9 @@ tags: viz, d3, waterman
 <link rel="stylesheet" type="text/css" href="/files/butterfly-temp/styles.css" />
 
 Yesterday I finally decided to port our D3 v3 viz code to the latest D3 v4,
-and it was a really pleaseant experience actually!
+and it was a really pleasant experience actually!
 This came as a nice surprise, since most JavaScript libraries
-don't offer a nice upgrading experience, in my oppinion
+don't offer a nice upgrading experience, in my opinion
 (`react-router` I'm looking at you).
 
 Also, this semester me and some class mates did a lot of viz work for our [Numerical Methods class](http://www-2.dc.uba.ar/materias/metnum/homepage.html)
@@ -59,7 +59,7 @@ svg.append('g')
     .call(legend);
 ```
 
-Another interesting bit is the clip path. Since the Waterman projection is not continuous, we have to cut some pieces of the map away. For that we use two things: that `d3.geoPath()` and the projection know how to render a `{type: 'Sphere'}` GeoJSON datum, and an svg `clipPath` in a `<defs>` element (which we also use tor ender the limit of the world). The full code for the clipping and limit drawing is:
+Another interesting bit is the clip path. Since the Waterman projection is not continuous, we have to cut some pieces of the map away. For that we use two things: that `d3.geoPath()` and the projection know how to render a `{type: 'Sphere'}` GeoJSON datum, and an svg `clipPath` in a `<defs>` element (which we also use to render the limit of the world). The full code for the clipping and limit drawing is:
 
 ```javascript
 var defs = svg.append('defs');
