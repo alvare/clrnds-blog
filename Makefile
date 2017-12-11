@@ -15,5 +15,5 @@ watch:
 clean:
 	stack exec blog clean
 
-publish: build
+publish:
 	@rsync -azP _site/ linoder@clrnd.com.ar:/var/www/blog
