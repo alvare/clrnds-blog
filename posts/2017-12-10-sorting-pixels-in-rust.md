@@ -175,7 +175,7 @@ error: non-reference pattern used to match a reference (see issue #42640)
 ## Actually sorting
 
 This is where I spent most of the time, and still couldn't get it to do
-exactly what I wanted to do, though it works.
+exactly what I wanted to do, but it works.
 
 Here is the actual sorting code:
 
@@ -189,18 +189,23 @@ for (i, pixel) in buf.pixels_mut().enumerate() {
 }
 ```
 
-Here, `buf` is a `RgbImage = ImageBuffer<Rgb<u8>, Vec<u8>>`, and as hard as I tried
-I couldn't get to sort that without copying it first into a temporary `buf2`
-and then iterating over the original buffer, assigning each position the sorted
-result's pixel.
+Here `buf` is an `RgbImage = ImageBuffer<Rgb<u8>, Vec<u8>>`.
+As hard as I tried, I couldn't get to sort that without copying the data
+(at least I assume it is copying? Could `clone()` be optimized away?). And I can't
+just access the underlying `Vec<u8>` because that's flattened to it's channels,
+elements aren't pixels but single colors.
 
-I think it is possible, but I already spent too much time trying, so
+As it is now, it first copies everything into a temporary `buf2`, sorts that
+and then iterates over the original buffer, assigning each position the sorted
+result.
+
+I think it is possible to avoid the copy, but I already spent too much time trying so
 if you kind reader know how, please contact me.
 
 # Tests?
 
 Testing in cargo is okay. It's cool to have testing directly built on the build tool,
-but it's a little awkward to use, and extremely dependent on file and folder names.
+but it's a little awkward to use and extremely dependent on file and folder names.
 
 For example you need to include the test module in main:
 
@@ -213,7 +218,9 @@ Nevertheless, it works like a charm.
 
 # Wrapping up
 
-For me, the most amazing bit was the tooling. I haven't tried the debugger (does it have one???)
+For me, the most amazing bit was the tooling. I haven't tried the debugger
+(I've no idea about this, but LLDB, the llvm debugger,
+is an excellent tool and I guess a plug-in would work like a charm)
 but `cargo`, [docs.rs](https://docs.rs/) and `rustup` make it really simple and ergonomic to
 work with other people's code, which for me is a crucial aspect of modern software development.
 
