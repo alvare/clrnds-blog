@@ -14,12 +14,9 @@ don't offer a nice upgrading experience, in my opinion
 
 Also, this semester me and some class mates did a lot of viz work for our [Numerical Methods class](http://www-2.dc.uba.ar/materias/metnum/homepage.html)
 which resulted in some [really](/files/hist-cant-gamma-k.png) [nice](/files/ranking_distance.png) [graphics](/files/world_temp_cross_full_poly.png).
-Yet there was a specific one we didn't have enough time to make: a map showing the average yearly temperature of the planet in a polyhedral projection.
 
-So today, finally with some free time available, and the D3 knowledge refreshened, I made it. The thing is, the data I have is per city, so what can be done?
-I have been wanting to use [d3-contour](https://github.com/d3/d3-contour) for some time and thought I finally had found an use case, but no.
-You need an even grid of samples for that, we only scattered cities. So what can be done?
-Well, [another](/posts/2015-05-07-primera-division-voronoi.html) voronoi map!
+Anyway, during this time it ocurred to me how silly it would be to do a pseudo-statistical map on a polyhedral projection.
+So, finally with some time available, I decided to do [another](/posts/2015-05-07-primera-division-voronoi.html) voronoi map!
 
 <div id="map" class="center"></div>
 

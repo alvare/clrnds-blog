@@ -16,3 +16,6 @@ pre.sourceCode span.al { color: red; font-weight: bold; }
 pre.sourceCode span.fu { color: #06287e; }
 pre.sourceCode span.re { }
 pre.sourceCode span.er { color: red; font-weight: bold; }
+
+pre.sourceCode span.bu { color: rgb(0, 0, 139); }
+pre.sourceCode span.cf { color: rgb(139, 0, 139); }

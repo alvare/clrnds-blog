@@ -26,6 +26,10 @@ p {
     color: #333;
 }
 
+blockquote p {
+    color: #9c8b41;
+}
+
 a {
     color: #2484C1;
     text-decoration: none;

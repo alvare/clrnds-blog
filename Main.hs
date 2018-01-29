@@ -7,6 +7,7 @@ import           Data.Monoid ((<>))
 import           Data.Text (pack, unpack, replace, empty)
 import qualified Data.Set as S
 import           Text.Pandoc.Options
+import           Skylighting.Styles
 
 import Hakyll
 
@@ -32,7 +33,7 @@ main = hakyll $ do
     -- Render posts
     match "posts/*" $ do
         route $ setExtension ".html"
-        compile $ pandocCompiler
+        compile $ myPandocCompiler
             >>= loadAndApplyTemplate "templates/post.html" (tagsCtx tags)
             >>= (externalizeUrls $ feedRoot feedConfiguration)
             >>= saveSnapshot "content"
@@ -164,14 +165,14 @@ postList tags pattern preprocess' = do
     processed <- preprocess' posts
     applyTemplateList postItemTpl (tagsCtx tags) processed
 
-pandocMathCompiler :: Compiler (Item String)
-pandocMathCompiler =
-    let mathExtensions = [Ext_tex_math_dollars, Ext_tex_math_double_backslash,
-                          Ext_latex_macros]
-        defaultExtensions = writerExtensions defaultHakyllWriterOptions
-        newExtensions = foldr S.insert defaultExtensions mathExtensions
-        writerOptions = defaultHakyllWriterOptions {
-                          writerExtensions = newExtensions,
-                          writerHTMLMathMethod = MathJax ""
-                        }
-    in pandocCompilerWith defaultHakyllReaderOptions writerOptions
+myPandocCompiler :: Compiler (Item String)
+myPandocCompiler =
+  pandocCompilerWith
+    defaultHakyllReaderOptions
+    defaultHakyllWriterOptions
+      { writerHtml5            = True
+      , writerHighlight        = True
+      , writerHighlightStyle   = pygments
+      , writerHTMLMathMethod   = PlainMath
+      , writerEmailObfuscation = NoObfuscation
+      }
