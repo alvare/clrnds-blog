@@ -1,11 +1,9 @@
 'use strict';
 
-d3.queue()
-.defer(d3.json, '/files/butterfly-temp/earth.json')
-.defer(d3.csv, '/files/butterfly-temp/1992.csv')
-.awaitAll((err, data) => {
-    if (err) throw err;
-
+Promise.all([
+    d3.json( '/files/butterfly-temp/earth.json'),
+    d3.csv( '/files/butterfly-temp/1992.csv')
+]).then(data => {
     let earth_topo = data[0];
     let cities_csv = data[1];
 

@@ -86,7 +86,7 @@ I hope you liked it or found it useful. The code is [over at GitHub](https://git
 
 Cheers!
 
-<script src="https://unpkg.com/d3@4"></script>
+<script src="https://unpkg.com/d3@5"></script>
 <script src="https://unpkg.com/lodash@4"></script>
 <script src="https://unpkg.com/topojson@3"></script>
 <script src="https://unpkg.com/d3-geo-projection@2"></script>
