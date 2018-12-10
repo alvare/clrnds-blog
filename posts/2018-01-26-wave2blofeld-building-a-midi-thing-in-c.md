@@ -17,7 +17,7 @@ iterates trough and other synth stuff. In the Blofeld, each wave table has
 
 Now the fun part: you can load your own wave tables!
 
-The catch is there is no nice official way to do it 😬
+The catch is that there is no nice official way to do it 😬
 
 So in order to maximize compatibility, and because why not, I decided to do it
 in C++ (or Rust, but the only MIDI lib I found was too beta for me).
@@ -91,14 +91,11 @@ for anything they like. Of course this means it's all done in binary.
 Thankfully for reference I had [Jonas Norling's page](http://www.lysator.liu.se/~norling/blofeld.html)
 which kindly offers the binary format explained and a reference implementation.
 
-For starters, the Blofeld wants 128 samples of little-endian signed 21 integers each, that is
+For starters, the Blofeld wants 128 samples of big-endian signed 21-bit integers each, that is
 integers between -1048575 and 1048575. `audiofile` loads samples as floating point numbers
-between -1 and 1, so first of all we normalize every sample.
-
-Then it's a matter of following the spec, and building a 410 byte array
-which is the SysEx message. We need to send a message for each of the 64 waves of the wave table.
-
-Here is the part of the message where the samples get loaded:
+between -1 and 1, so each loop we normalize every sample and then load it in 7-bit triplets
+[Edit: Jonas' post says "21-byte little-endian" numbers, which is weird because 21-bytes is a lot
+and anyway little-endian didn't work for me, so I guess that's a typo].
 
 ```cpp
     for (int i = 0; i < 128; ++i){
@@ -108,7 +105,8 @@ Here is the part of the message where the samples get loaded:
     }
 ```
 
-Yup, it's really that simple.
+Then it's a matter of following the spec, and building a 410 byte array
+which is the SysEx message. We need to send a message for each of the 64 waves of the wave table.
 
 Finally, a touch of iterators for adding every byte of the wave, which
 makes a kind of checksum:

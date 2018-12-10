@@ -170,9 +170,7 @@ myPandocCompiler =
   pandocCompilerWith
     defaultHakyllReaderOptions
     defaultHakyllWriterOptions
-      { writerHtml5            = True
-      , writerHighlight        = True
-      , writerHighlightStyle   = pygments
+      { writerHighlightStyle   = Just pygments
       , writerHTMLMathMethod   = PlainMath
       , writerEmailObfuscation = NoObfuscation
       }

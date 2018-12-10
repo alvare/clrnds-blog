@@ -13,4 +13,5 @@ executable blog
                       , pandoc
                       , containers
                       , hakyll
+                      , skylighting
   default-language:    Haskell2010
